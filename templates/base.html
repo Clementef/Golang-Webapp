@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Golang WebApp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="shortcut icon" href="{{ .Static }}img/favicon.ico"> -->
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="navbar">
+      <div class="container">
+        <!-- logo -->
+        <a class="navbar-brand" href="/">Golang Webapp</a>
+        <!-- navbar collapse -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navControl" aria-controls="navControl" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navbar contents -->
+        <div class="collapse navbar-collapse" id="navControl">
+          <ul class="navbar-nav ms-auto" style="padding-left:2vw;padding-right:vw;">
+            <li class="nav-item">
+              <a class="nav-link" href="/carts/">Carts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- custom page content -->
+    <br />
+    <div class="container">
+      {{ template "content" . }}
+    </div>
+    <br />
+    <!-- footer -->
+    <footer class="footer mt-auto py-3 bg-dark">
+      <div class="container">
+        <span class="text-muted">Website by Clemente Ferrer.</span>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>
+<style>
+html,
+body {
+height: 100%;
+background-color: #333;
+}
+</style>
